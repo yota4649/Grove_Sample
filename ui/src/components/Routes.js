@@ -8,6 +8,7 @@ import {
   CreateContainer,
   LoginContainer
 } from '../containers';
+import DetailView from './DetailView';
 
 const PrivateRoute = ({
   component: Component,
@@ -69,7 +70,7 @@ const Routes = ({ isAuthenticated }, ...rest) => {
           const id =
             (props.location.state && props.location.state.id) ||
             queryString.parse(props.location.search).id;
-          return <DetailContainer id={id} />;
+          return <DetailContainer template={DetailView} id={id} />;
         }}
       />
       <PrivateRoute

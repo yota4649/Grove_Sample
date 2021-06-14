@@ -37,7 +37,7 @@ if (enableLegacyProxy) {
         },
         // Follow this pattern for other REST extensions
         {
-          endpoint: '/resources/extsimilar',
+          endpoint: '/resources/*',
           methods: ['get'],
           authed: true
         }

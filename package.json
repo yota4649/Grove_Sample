@@ -10,7 +10,6 @@
     "concurrently": "^3.6.1",
     "cross-env": "^5.2.1"
   },
-  "dependencies": {},
   "scripts": {
     "build": "cd ui && npm run build",
     "lint": "cd middle-tier && npm run lint; cd ../ui && npm run lint",
