@@ -1,6 +1,7 @@
 wget https://developer.marklogic.com/download/binaries/10.0/MarkLogic-10.0-7.x86_64.rpm
 wget https://nodejs.org/dist/v14.17.0/node-v14.17.0-linux-x64.tar.xz
-
+ln -s node-v14.17.0-linux-x64 node
+echo "PATH=$HOME/node/bin:$PATH"
 npm install -g @marklogic-community/grove-cli
 #grove new your-project-name
 #cd your-project-name
