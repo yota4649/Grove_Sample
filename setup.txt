@@ -1,13 +1,14 @@
-wget
-
+wget https://developer.marklogic.com/download/binaries/10.0/MarkLogic-10.0-7.x86_64.rpm
+wget https://nodejs.org/dist/v14.17.0/node-v14.17.0-linux-x64.tar.xz
 
 npm install -g @marklogic-community/grove-cli
-grove new your-project-name
-cd your-project-name
+#grove new your-project-name
+#cd your-project-name
 
 
-grove config
-
+#grove config
+##         localhost
+##         8210
 
 cd marklogic
 ./gradlew mlDeploy
@@ -19,7 +20,7 @@ npm install --save @marklogic-community/grove-react-visjs-graph
 sudo npm install -g mlpm
 mlpm install visjs-graph
 mlpm deploy -H localhost -P 8210 -u admin -p admin
-
+cd ..
 
 npm install
 npm start
