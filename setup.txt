@@ -1,0 +1,25 @@
+wget
+
+
+npm install -g @marklogic-community/grove-cli
+grove new your-project-name
+cd your-project-name
+
+
+grove config
+
+
+cd marklogic
+./gradlew mlDeploy
+./gradlew loadSampleData
+cd ..
+
+cd ui
+npm install --save @marklogic-community/grove-react-visjs-graph
+sudo npm install -g mlpm
+mlpm install visjs-graph
+mlpm deploy -H localhost -P 8210 -u admin -p admin
+
+
+npm install
+npm start
